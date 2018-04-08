@@ -40,7 +40,7 @@ If matches in CollectionWanted, show results (high priority)
 If not interested in these results or not matches (high priority)
 Add a record to CollectionHave
 
-
+# References
 Date range picker in bootstrap: http://www.daterangepicker.com/
 
 How to use bootstrap in meteor: https://stackoverflow.com/questions/26711577/how-to-use-bootstrap-in-meteor
