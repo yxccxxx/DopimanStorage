@@ -1,5 +1,17 @@
 # DopimanStorage
-link: https://yxcindy.github.io/DopimanStorage/
+Need to work with meteor
+Add iron:router
+```
+meteor add iron:router
+```
+Add bootstrap
+```
+meteor add bootstrap
+```
+or
+```
+meteor add twbs:bootstrap
+```
 
 # Workflow
 1. Main page 
