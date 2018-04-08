@@ -8,8 +8,9 @@
   <link rel="stylesheet" type="text/css" href="Ihave.css">
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 </head>
 <body>
     <div class="container">
@@ -42,7 +43,14 @@
     							<div class="cols-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-    									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter the Date"/>
+                      <input type="text" name="daterange2" placeholder="Enter the Date" class="form-control">
+                      <script type="text/javascript">
+
+                      $('input[name="daterange2"]').daterangepicker({
+                        showDropdowns: true,
+                      });
+
+                    </script>
     								</div>
     							</div>
     						</div>
@@ -89,7 +97,7 @@
     		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
 </body>
 
 </template>
