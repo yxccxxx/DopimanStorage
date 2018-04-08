@@ -1,5 +1,5 @@
 # DopimanStorage
-link: https://github.com/yxcindy/DopimanStorage
+link: https://yxcindy.github.io/DopimanStorage/
 
 # Workflow
 1. Main page 
@@ -16,6 +16,7 @@ If matches: show results and notify provider (send email) (high priority)
 If not matches: let searchers enter their information for future reference (medium priority)
 
 CollectionWanted: storage not found
+
 CollectionHave: not matched / not interested
 
 Divided by size, sorted by start date
@@ -28,6 +29,8 @@ Add a record to CollectionHave
 
 
 Date range picker in bootstrap: http://www.daterangepicker.com/
+
 How to use bootstrap in meteor: https://stackoverflow.com/questions/26711577/how-to-use-bootstrap-in-meteor
 https://stackoverflow.com/questions/36578669/how-use-bootstrap-via-npm-in-meteor-1-3/37333520#37333520
+
 Send email through Javascript: https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript
