@@ -11,7 +11,12 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link href="https://silviomoreto.github.io/bootstrap-select/css/base.css" rel="stylesheet"/>
+  <link href="https://silviomoreto.github.io/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"/>
+  <script src="https://silviomoreto.github.io/bootstrap-select/dist/js/bootstrap-select.min.js">
+  <script src="https://silviomoreto.github.io/bootstrap-select/js/base.js"></script>
 </head>
+
 <body>
     <div class="container">
     			<div class="row main">
@@ -59,21 +64,37 @@
     							<label for="password" class="cols-sm-2 control-label">Size</label>
     							<div class="cols-sm-10">
     								<div class="input-group">
-    									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-    									<input type="size" class="form-control" name="size" id="size"  placeholder="xx/xx/xxxx-xx/xx/xxxx"/>
+                      <!--<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+    									<input type="size" class="form-control" name="size" id="size"  placeholder="xx/xx/xxxx-xx/xx/xxxx"/>-->
+                      <select class="selectpicker">
+                        <option data-content='<img src="https://doc-00-7o-docs.googleusercontent.com/docs/securesc/f09u46678bb05cshbcee32j1h8qshljo/52m4g6kkihl74sm45h33jl4bc2lghomr/1523318400000/15581876953272857397/15581876953272857397/1vA0MfY8RvMp_rucc53Vl5704BS9TOKhx">'>5'x5' size</option>
+                        <option data-content='<img src="https://doc-00-7o-docs.googleusercontent.com/docs/securesc/f09u46678bb05cshbcee32j1h8qshljo/2ab798dmnrrlm7o99kb8ph8h9rurlhgg/1523318400000/15581876953272857397/15581876953272857397/12NRjMjnutDd-mzGk_032Q7S9iXxJdINt">'>5'x10' size</option>
+                        <option data-content='<img src="https://doc-0g-7o-docs.googleusercontent.com/docs/securesc/f09u46678bb05cshbcee32j1h8qshljo/kart49j1h1v7u3jg5r780u6bg8jskkgi/1523318400000/15581876953272857397/15581876953272857397/1p5nA7aqZluRnA_fGsM-jlZpWfpuZoiTW">'>5'x15' size</option>
+                        <option data-content='<img src="https://doc-10-7o-docs.googleusercontent.com/docs/securesc/f09u46678bb05cshbcee32j1h8qshljo/7samd30u3po2u8gkkceevogopf90iqht/1523318400000/15581876953272857397/15581876953272857397/166qP28QOHTsJqdobKNSmyqcydpH_2uSb">'>10'x10' size</option>
+                        <option data-content='<img src="https://doc-04-7o-docs.googleusercontent.com/docs/securesc/f09u46678bb05cshbcee32j1h8qshljo/p10vptcrat4kohhlkebsvsni2e4bplkm/1523318400000/15581876953272857397/15581876953272857397/1dfIkJtbvLMfWr6Uh6amdrPnviPtDXyHv">'>10'x15' size</option>
+                      </select>
+                      <script type="text/javascript">
+
+                      $(function() {
+                          $('.selectpicker').selectpicker();
+                      });
+
+                    </script>
     								</div>
     							</div>
     						</div>
 
-                <div class="form-group">
-    							<label for="confirm" class="cols-sm-2 control-label">Price</label>
-    							<div class="cols-sm-10">
-    								<div class="input-group">
-    									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-    									<input type="price" class="form-control" name="price" id="price"  placeholder="$$-$$"/>
-    								</div>
-    							</div>
-    						</div>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="confirm" class="cols-sm-2 control-label">Price Range</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">$</div>
+                      <input type="text" class="form-control" id="fromPrice" placeholder="From Price $$">
+                      <input type="text" class="form-control" id="toPrice" placeholder="To Price $$">
+                      <div class="input-group-addon">.00</div>
+                    </div>
+                  </div>
+                </form>
 
     					<!-- TODO	<div class="form-group">
     							<label for="confirm" class="cols-sm-2 control-label">Location</label>
